@@ -1,4 +1,5 @@
 import my_functions
+import json
 
 experiment_name = input("Geben sie Experimentname:")
 supervisor = input("Geben supervisor ein:")
@@ -8,5 +9,11 @@ subject = input("Geben subject ein:")
 
 
 if __name__ == "__main__":
-    print(my_functions.build_experiment(experiment_name,supervisor,date,subject))
+    experiment = my_functions.build_experiment(experiment_name,supervisor,date,subject)
+    print(experiment)
+
+
+with open("sample.json", "a") as outfile: 
+    json.dump(experiment, outfile)
+
 
