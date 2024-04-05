@@ -1,5 +1,5 @@
 # LeistungsanalyseApp
-## Wie benutze ich diesen Code zur Leistungsanalyse
+## Wie benutze ich diesen Code zur Leistungsanalyse?
 ### 
 1. Schreiben sie den Experimentnamen in die Konsole
 2. Schreiben sie den Experimentsupervisor
