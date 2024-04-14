@@ -2,7 +2,9 @@
 ## Voraussetzungen
 ### 
 Installieren sie sich jeglichen code auf ihr Endgerät
+
 Erstellen sie sich eine virtuelle Umgebung in dem sie python -m venv in die Console kopieren
+
 Aktivieren sie die virtuelle Umgebung mit path\\venv\cripts\activate.bat“ in der Eingabeaufforderung oder „path\venv\cripts\activate.bat“ in der PowerShell.
 ## Ablauf des Codes
 ###
