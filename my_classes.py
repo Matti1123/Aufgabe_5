@@ -7,6 +7,7 @@ class Person:
         self.sex = sex
         self.age = age
         self.max_hr = self.estimate_max_hr(self.sex,self.age)
+
     def estimate_max_hr(self,sex,age):
         if sex == "male":
             max_hr_bpm =  223 - 0.9 * age
@@ -16,6 +17,7 @@ class Person:
             # der input() öffnet ein Eingabefenster für den Nutzer und speichert die Eingabe
             max_hr_bpm  = input("Enter maximum heart rate:")
         return max_hr_bpm
+    
     def save(self):
         with open("person.json", "a") as outfile: 
             json.dump(self.__dict__, outfile)
