@@ -8,7 +8,7 @@ supervisor = input("Geben supervisor ein:")
 date = input("Geben date ein:")
 subject = input("Geben subject ein:")
 
-#
+#Personendaten
 first_name = input("Geben sie first_name:")
 last_name = input("Geben sie last_name ein:")
 sex = input("Geben sex ein:")
