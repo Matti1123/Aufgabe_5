@@ -1,4 +1,4 @@
-# LeistungsanalyseApp
+# Leistungsanalyse App
 ## Voraussetzungen
 ### 
 Installieren sie sich jeglichen code auf ihr Endgerät
