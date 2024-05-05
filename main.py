@@ -16,8 +16,9 @@ if __name__ == "__main__":
     first_name = input("Geben sie first_name:")
     last_name = input("Geben sie last_name ein:")
     sex = input("Geben sex ein:")
-    age = int(input("Geben age ein:"))
+    age = input("Geben age ein:")
     birthdate = input("Geben birthdate ein:")
+    email = input("Geben email ein:")
 
     #Personendaten supervisor
     supervisor_fist_name = input("Geben sie Supervisor first_name:")
@@ -25,7 +26,7 @@ if __name__ == "__main__":
     supervisor_id = input("Geben sie supervisor_id ein:")
 
 
-    subject = mc.Subject(first_name, last_name, sex, age,birthdate)
+    subject = mc.Subject(first_name, last_name, sex, age,birthdate,email)
     mc.Subject.save(subject)
     print(subject)
     
@@ -39,3 +40,10 @@ if __name__ == "__main__":
 
 #with open("main.json", "a") as outfile: 
     #json.dump(experiment, outfile)
+
+print("Uploading data")
+url = "http://localhost:5000/"
+supervisor.put(url)
+subject.put(url)
+subject.update_email(url)
+print("Succesfully uploaded")
